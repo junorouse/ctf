@@ -1,3 +1,4 @@
 - I solved other web and misc challs. (its actually all the misc zzz)
 - But I deleted(or not saved) exploit/solver.
 - Sry.
+- If you have any questions for final challs just send me an email.

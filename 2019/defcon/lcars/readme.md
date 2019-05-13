@@ -1,1 +1,1 @@
-- i will post full-writeup of lcars series asap.
+- i will post full-writeup for lcars series asap.

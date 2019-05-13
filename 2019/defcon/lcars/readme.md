@@ -1,0 +1,1 @@
+- i will post full-writeup of lcars series asap.

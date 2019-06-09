@@ -9,13 +9,13 @@
 ```
 
 If the code goes to the upper code path, we can set an arbitrary name.  
-I don't know why but we put "login?user?pass?c:login???:store?a?b?c" on the `batch` command,  
+I don't know why but we put "login?user?pass?c:login???:store?a?b?c" on the `batch` command,(by RBTree_Pg_)  
 `user` => `''`, `args` => `a`. (hooray we can get aribtrary file r/w).
 
 ## exploit
 
 We can read arbitrary file but only fisrt line. I faced on `your flag here:` message when I read `../../../../../../flag`. I had to get a Code Execution to read the whole flag.
-I am not at on-site. I asked to my teammate "I asked teammate, Is port 22 open?", he said yes, I changed the contents of `/home/user/.ssh/authorized_keys` to mine.
+I am not at on-site. I asked to my teammate "Is port 22 open?", he said yes, I changed the contents of `/home/user/.ssh/authorized_keys` to mine.
 
 ```shell
 $ cat flag

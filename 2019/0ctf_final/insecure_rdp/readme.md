@@ -7,8 +7,8 @@
 Old-rdp uses rc4 128 bit encryption for secure-connection. To make rc4 encryption key rdp uses RSA asymmetric crypto, btw the key is really short(512 bit).
 
 At the first time, I mistaken the bytes are right order.
-Right away I put that number(N) and search on factordb. (http://factordb.com/index.php?query=8585773518239202618014259252265007041474576494007326305566936231179558082498454385604139747248680116141231666404283485452921757852460000935905449875937236)
-Sadly it could not be a (N) since thie is not a (prime1 * prime2) form.
+I put that number(N) and search on factordb. (http://factordb.com/index.php?query=8585773518239202618014259252265007041474576494007326305566936231179558082498454385604139747248680116141231666404283485452921757852460000935905449875937236)
+Sadly it could not be a (N) since this is not a (prime1 * prime2) form.
 
 Yes, I notice that the bytes are reverse order. (http://factordb.com/index.php?query=11108191436132586895020456675719608627041223049898764263726511071041880035545059834370244436455550875653187155250844471535388827581310104544771906189127331)
 But I can't find its private key.....
@@ -19,7 +19,7 @@ I looked again the pcap file slowly. I figure out that `serverCertificate` has a
 
 ![image1.png](image1.png)
 
-The normal rdp packets do not contains `RSA2` part. Yes, this is LSA secret form. :(
+The normal rdp packets do not contains `RSA2` part. Yes, this is the form of LSA secret. :(
 
 ```
 C:\>LsaSecretReader.exe L$HYDRAENCKEY_28ada6da-d622-11d1-9cb9-00c04fb16e75

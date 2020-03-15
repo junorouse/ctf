@@ -59,7 +59,7 @@ def get(key: str) -> bytes:
 
 - good,
 - we searched a lot on google but we could not find any way to an emulator to detect as virus.
-- soon, I remember that rpisec is doing an malware traning course. their hacking skills are nice (as far as i know), so they have a tiny pe with malware sample? (I know that this was not a logical thinking. Yes I was lucky XD)
+- soon, I remember that rpisec is doing an malware traning course [https://github.com/RPISEC/Malware](https://github.com/RPISEC/Malware). their hacking skills are nice (as far as i know), so they have a tiny pe with malware sample? (I know that this was not a logical thinking. Yes I was lucky XD)
 - after downloading a lecture 4, windows defender detected it as a malware. and then I added a '\xcc' (int 0x3) to the first code offset (0x200), surprisingly windows defender did not detect as a malware.
 
 ```python
